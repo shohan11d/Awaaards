@@ -5,6 +5,7 @@ import './Home.css'
 import React from 'react'
 
 const Home = ({sidebar}) => {
+  
   return (
     <>
       <Sidebar sidebar={sidebar}/>
