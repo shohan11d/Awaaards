@@ -2,6 +2,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Features from "./components/Features";
+import Story from "./components/Story";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Hero />
       <About/>
       <Features />
+      <Story />
+      <Footer />
     </>
   );
 }
