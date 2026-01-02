@@ -1,53 +1,38 @@
-import { TiLocationArrow } from "react-icons/ti"
-import VideoPreview from "./VideoPreview"
-import { TfiLocationArrow } from "react-icons/tfi"
-import Button from "./Button"
+import { TiLocationArrow } from "react-icons/ti";
+import Button from "./Button";
 
 function Hero() {
   return (
-    <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-400">
-      <div>
-        <div>
-          <div>
-            <div>
-              <video className="size-64 origin-center scale-150 object-cover object-center" src="/videos/hero-1.mp4" autoPlay loop muted id="current-video" />
-            </div>
-          </div>
-        </div>
-        <video src="/videos/hero-3.mp4" id="next-video" autoPlay loop muted className="absolute-center absolute z-20 size-64 object-cover object-center" />
-        <video
-          autoPlay
-          src="/videos/hero-4.mp4"
-          loop
-          muted
-          className="absolute left-0 top-0 size-full object-cover object-center"
-        />
-      </div>
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-        G<b>A</b>MING
-      </h1>
-      <div className="absolute left-0 top-0 z-40 size-full">
-        <div className="mt-24 px-5 sm:px-10">
-          <h1 className="special-font hero-heading text-blue-100">
-            redefi<b>n</b>e
-          </h1>
-
-          <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
+    <div className="relative h-dvh overflow-hidden">
+      <div className=" h-dvh w-full flex flex-col justify-between container mx-auto size-full relative z-10">
+        <div className="py-8 mt-14">
+          <h1 className="uppercase hero-heading text-white">Redefine</h1>
+          <p className="text-white mb-4">
             Enter the Metagame Layer <br /> Unleash the Play Economy
           </p>
-
           <Button
             id="watch-trailer"
-            title="Watch trailer"
-            leftIcon={<TfiLocationArrow />}
-            containerClass="bg-yellow-300 flex-center gap-1"
+            title="Watch Trailer"
+            leftIcon={<TiLocationArrow />}
+            containerClass="bg-yellow-300 flex-center gap-1 self-start"
           />
         </div>
+
+        <div className="flex items-center justify-end">
+          <h1 className="hero-heading text-white">
+            Ga<b>m</b>ing
+          </h1>
+        </div>
       </div>
-
+      <video
+        src="./videos/hero-1.mp4"
+        autoPlay
+        muted
+        loop
+        className="w-full inset-0  size-full absolute top-0 left-0 object-cover"
+      />
     </div>
-
-  )
+  );
 }
 
-export default Hero
+export default Hero;
