@@ -3,12 +3,15 @@ import Button from "./Button";
 
 function Hero() {
   return (
-    <div className="relative h-dvh overflow-hidden">
+    <div className="relative px-4 h-dvh overflow-hidden">
       <div className=" h-dvh w-full flex flex-col justify-between container mx-auto size-full relative z-10">
         <div className="py-8 mt-14">
-          <h1 className="uppercase hero-heading text-white">Marvel </h1>
-          <p className="text-white mb-4">
-            Enter the Metagame Layer <br /> Unleash the Play Economy
+          <img src="./img/rivals-logo.png"  className="w-40 md:w-130 mb-4" alt="" />
+          <p className="text-white text-xs md:text-2xl  uppercase ">
+            The Super hero team-based pvp shooter
+          </p>
+          <p className="text-[#FBDB2B] text-xs md:text-2xl font-bold uppercase mb-4">
+            All heroes are free to play!
           </p>
           <Button
             id="watch-trailer"
@@ -19,11 +22,11 @@ function Hero() {
         </div>
 
         <div className="flex items-center justify-end">
-          <h1 className="hero-heading text-white">Rivals</h1>
+          <h1 className="hero-heading text-white mb-8">Play Now</h1>
         </div>
       </div>
       <video
-        src="./videos/hero-1.mp4"
+        src="./videos/marvel-hero1.mp4"
         autoPlay
         muted
         loop

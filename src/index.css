@@ -59,3 +59,7 @@
 @utility hero-heading {
   @apply uppercase font-zentry font-black text-5xl md:text-9xl lg:text-[12rem];
 }
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
