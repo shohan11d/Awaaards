@@ -56,7 +56,7 @@ function Hero() {
           </div>
           <h1 className="absolute right-4 bottom-0 md:right-30 lg:right-44  z-40 text-white hero-heading  mb-8">
             Play Now
-          </h1>
+          </h1> 
         </div>
         <video
           src="./videos/marvel-hero1.mp4"
