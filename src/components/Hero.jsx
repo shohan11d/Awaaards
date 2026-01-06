@@ -54,9 +54,9 @@ function Hero() {
               containerClass="bg-[#FBDB2B] text-black flex-center gap-1 self-start"
             />
           </div>
-          <h1 className="absolute right-4 bottom-0 md:right-30 lg:right-44  z-40 text-white hero-heading  mb-8">
+          <h1 className="absolute right-4 md:right-0 bottom-0 z-40 text-white hero-heading  mb-8">
             Play Now
-          </h1> 
+          </h1>
         </div>
         <video
           src="./videos/marvel-hero1.mp4"
@@ -66,9 +66,7 @@ function Hero() {
           className="w-full inset-0  size-full absolute top-0 left-0 object-cover"
         />
       </div>
-      <h1 className="absolute right-6 bottom-0 md:right-28 lg:right-87  z-10 text-black hero-heading  mb-8">
-        Play Now
-      </h1>
+      
     </div>
   );
 }
