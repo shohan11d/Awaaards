@@ -13,6 +13,8 @@ function App() {
       <Hero />
       <About/>
       <Features/>
+      <Contact/>    
+      <Footer/>
     </>
   );
 }
